@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/animations.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header style="overflow-x: hidden;" >
+       
+        <div class="nation-sect" id="nation-sect">
+            <div class="nation-wrapper">
+                <div class="flex-row">
+                    <p class="nation-text">You are visiting United States (English/USD)</p>
+                    <button id="close-btn-1" class="close-btn">
+                        <i class="fa-solid fa-x fa-sm" style="color: #000000;"></i>
+                    </button>
+                </div>
+                <a href="#" class="nation-link">Switch to (/)</a>
+            </div>
+        </div>
+        
+        
+        <div class="offer-sect " id="offer-sect">
+            <div class="offer-wrapper">
+                <p class="offer-text">OnePlus Open Apex Edition: Save $300 with Code 1TBFORLIFE.</p>
+                <button id="close-btn-2" style="border: none; background-color: transparent; cursor: pointer; ">
+
+                <i class="fa-solid fa-x fa-sm" style="color: #ffffff;"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="navbar sticky" id="navbar" style="z-index: 9999;">
+            <div class="navbar-wrapper">
+                <img src="/src/img/oneplus_logo.png" alt="">
+                <ul class="navbar-list">
+                    <li>
+                        <a class="navbar-list-item" href="#">Store
+                            <div class="dropdown-menu " style="animation-name: fadeIn,slide-top-2; animation-duration: 300ms,300ms;">
+                                <div class="dropdown-menu-content" style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <p style="display: flex; justify-content: start; gap: 12px; align-items: center; color: black; font-size: 20px;">Go to Offical Store <i class="fa-solid fa-arrow-right fa-md"></i></p>
+                                        <div class="flex-row" style="gap: 15px; margin-top: 45px;">
+                                            <div class="nav-card flex-col" style="gap: 10px; ">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/phone.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/tablet.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/vatch.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/audio.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/accessor.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/umumi.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul style="border-left: #c7c7c7 1px solid; height: 100vh; padding: 20px; display: flex; color: black; font-size: 14px; text-align: left; flex-direction: column; gap: 10px;">
+                                            <li style="color: gray; font-size: 12px;">Offers</li>
+                                            <li style="margin-top: 15px;">Invite Friends</li>
+                                            <li>Trade-in & Upgrade</li>
+                                            <li>Students Discounts</li>
+                                            <li>Employee Discounts</li>
+                                            <li>Membership Benefits</li>
+                                            <li>Exclusive savings in OnePlus Store App</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navbar-list-item" href="#">Phone
+                            <div class="dropdown-menu " style="animation-name: fadeIn,slide-top-2; animation-duration: 300ms,300ms;">
+                                <div class="dropdown-menu-content" style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <p style="display: flex; justify-content: start; gap: 12px; align-items: center; color: black; font-size: 20px;">Go to Offical Store <i class="fa-solid fa-arrow-right fa-md"></i></p>
+                                        <div class="flex-row" style="gap: 15px; margin-top: 45px;">
+                                            <div class="nav-card flex-col" style="gap: 10px; ">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/phone.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/audio.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/accessor.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/umumi.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul style="border-left: #c7c7c7 1px solid; height: 100vh; padding: 20px; display: flex; color: black; font-size: 14px; text-align: left; flex-direction: column; gap: 10px;">
+                                            <li style="color: gray; font-size: 12px;">Offers</li>
+                                            <li style="margin-top: 15px;">Invite Friends</li>
+                                            <li>Trade-in & Upgrade</li>
+                                            <li>Students Discounts</li>
+                                            <li>Employee Discounts</li>
+                                            <li>Membership Benefits</li>
+                                            <li>Exclusive savings in OnePlus Store App</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>                    
+                    <li>
+                        <a class="navbar-list-item" href="#">Tablet
+                            <div class="dropdown-menu " style="animation-name: fadeIn,slide-top-2; animation-duration: 300ms,300ms;">
+                                <div class="dropdown-menu-content" style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <p style="display: flex; justify-content: start; gap: 12px; align-items: center; color: black; font-size: 20px;">Go to Offical Store <i class="fa-solid fa-arrow-right fa-md"></i></p>
+                                        <div class="flex-row" style="gap: 15px; margin-top: 45px;">
+                                            
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/audio.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/accessor.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/umumi.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul style="border-left: #c7c7c7 1px solid; height: 100vh; padding: 20px; display: flex; color: black; font-size: 14px; text-align: left; flex-direction: column; gap: 10px;">
+                                            <li style="color: gray; font-size: 12px;">Offers</li>
+                                            <li style="margin-top: 15px;">Invite Friends</li>
+                                            <li>Trade-in & Upgrade</li>
+                                            <li>Students Discounts</li>
+                                            <li>Employee Discounts</li>
+                                            <li>Membership Benefits</li>
+                                            <li>Exclusive savings in OnePlus Store App</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>                  
+                    <li>
+                        <a class="navbar-list-item" href="#">Wearables
+                            <div  class="dropdown-menu " style="animation-name: fadeIn,slide-top-2; animation-duration: 300ms,300ms;">
+                                <div class="dropdown-menu-content" style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <p style="display: flex; justify-content: start; gap: 12px; align-items: center; color: black; font-size: 20px;">Go to Offical Store <i class="fa-solid fa-arrow-right fa-md"></i></p>
+                                        <div class="flex-row" style="gap: 15px; margin-top: 45px;">
+                                            
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/audio.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/accessor.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul style="border-left: #c7c7c7 1px solid; height: 100vh; padding: 20px; display: flex; color: black; font-size: 14px; text-align: left; flex-direction: column; gap: 10px;">
+                                            <li style="color: gray; font-size: 12px;">Offers</li>
+                                            <li style="margin-top: 15px;">Invite Friends</li>
+                                            <li>Trade-in & Upgrade</li>
+                                            <li>Students Discounts</li>
+                                            <li>Employee Discounts</li>
+                                            <li>Membership Benefits</li>
+                                            <li>Exclusive savings in OnePlus Store App</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>             
+                    <li>
+                        <a class="navbar-list-item" href="#">Audio
+                            <div class="dropdown-menu " style="animation-name: fadeIn,slide-top-2; animation-duration: 300ms,300ms;">
+                                <div class="dropdown-menu-content" style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <p style="display: flex; justify-content: start; gap: 12px; align-items: center; color: black; font-size: 20px;">Go to Offical Store <i class="fa-solid fa-arrow-right fa-md"></i></p>
+                                        <div class="flex-row" style="gap: 15px; margin-top: 45px;">
+                                            
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/audio.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/audio.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/audio.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/audio.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/accessor.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul style="border-left: #c7c7c7 1px solid; height: 100vh; padding: 20px; display: flex; color: black; font-size: 14px; text-align: left; flex-direction: column; gap: 10px;">
+                                            <li style="color: gray; font-size: 12px;">Offers</li>
+                                            <li style="margin-top: 15px;">Invite Friends</li>
+                                            <li>Trade-in & Upgrade</li>
+                                            <li>Students Discounts</li>
+                                            <li>Employee Discounts</li>
+                                            <li>Membership Benefits</li>
+                                            <li>Exclusive savings in OnePlus Store App</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>             
+                    <li>
+                        <a class="navbar-list-item" href="#">More Products
+                            <div class="dropdown-menu " style="animation-name: fadeIn,slide-top-2; animation-duration: 300ms,300ms;">
+                                <div class="dropdown-menu-content" style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <p style="display: flex; justify-content: start; gap: 12px; align-items: center; color: black; font-size: 20px;">Go to Offical Store <i class="fa-solid fa-arrow-right fa-md"></i></p>
+                                        <div class="flex-row" style="gap: 15px; margin-top: 45px;">
+                                            
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/audio.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/accessor.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/accessor.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul style="border-left: #c7c7c7 1px solid; height: 100vh; padding: 20px; display: flex; color: black; font-size: 14px; text-align: left; flex-direction: column; gap: 10px;">
+                                            <li style="color: gray; font-size: 12px;">Offers</li>
+                                            <li style="margin-top: 15px;">Invite Friends</li>
+                                            <li>Trade-in & Upgrade</li>
+                                            <li>Students Discounts</li>
+                                            <li>Employee Discounts</li>
+                                            <li>Membership Benefits</li>
+                                            <li>Exclusive savings in OnePlus Store App</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>             
+                    <li>
+                        <a class="navbar-list-item" href="#">OneTopia
+                            <div class="dropdown-menu " style="animation-name: fadeIn,slide-top-2; animation-duration: 300ms,300ms;">
+                                <div class="dropdown-menu-content" style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <p style="display: flex; justify-content: start; gap: 12px; align-items: center; color: black; font-size: 20px;">Go to Offical Store <i class="fa-solid fa-arrow-right fa-md"></i></p>
+                                        <div class="flex-row" style="gap: 15px; margin-top: 45px;">
+                                            
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/audio.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/accessor.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul style="border-left: #c7c7c7 1px solid; height: 100vh; padding: 20px; display: flex; color: black; font-size: 14px; text-align: left; flex-direction: column; gap: 10px;">
+                                            <li style="color: gray; font-size: 12px;">Offers</li>
+                                            <li style="margin-top: 15px;">Invite Friends</li>
+                                            <li>Trade-in & Upgrade</li>
+                                            <li>Students Discounts</li>
+                                            <li>Employee Discounts</li>
+                                            <li>Membership Benefits</li>
+                                            <li>Exclusive savings in OnePlus Store App</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>             
+                    <li>
+                        <a class="navbar-list-item" href="#">Community
+                            <div class="dropdown-menu " style="animation-name: fadeIn,slide-top-2; animation-duration: 300ms,300ms;">
+                                <div class="dropdown-menu-content" style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <p style="display: flex; justify-content: start; gap: 12px; align-items: center; color: black; font-size: 20px;">Go to Offical Store <i class="fa-solid fa-arrow-right fa-md"></i></p>
+                                        <div class="flex-row" style="gap: 15px; margin-top: 45px;">
+                                            
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/audio.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/accessor.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul style="border-left: #c7c7c7 1px solid; height: 100vh; padding: 20px; display: flex; color: black; font-size: 14px; text-align: left; flex-direction: column; gap: 10px;">
+                                            <li style="color: gray; font-size: 12px;">Offers</li>
+                                            <li style="margin-top: 15px;">Invite Friends</li>
+                                            <li>Trade-in & Upgrade</li>
+                                            <li>Students Discounts</li>
+                                            <li>Employee Discounts</li>
+                                            <li>Membership Benefits</li>
+                                            <li>Exclusive savings in OnePlus Store App</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>             
+                    <li>
+                        <a class="navbar-list-item" href="#">Support
+                            <div class="dropdown-menu " style="animation-name: fadeIn,slide-top-2; animation-duration: 300ms,300ms;">
+                                <div class="dropdown-menu-content" style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <p style="display: flex; justify-content: start; gap: 12px; align-items: center; color: black; font-size: 20px;">Go to Offical Store <i class="fa-solid fa-arrow-right fa-md"></i></p>
+                                        <div class="flex-row" style="gap: 15px; margin-top: 45px;">
+                                            
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/audio.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            <div class="nav-card flex-col" style="gap: 10px;">
+                                                <div class="nav-card-img">
+                                                    <img src="/src/img/accessor.png" alt="" style="width: 120px; height: 120px;">
+                                                </div>
+                                                <p style="color: black; font-size: 15px;">Phone</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul style="border-left: #c7c7c7 1px solid; height: 100vh; padding: 20px; display: flex; color: black; font-size: 14px; text-align: left; flex-direction: column; gap: 10px;">
+                                            <li style="color: gray; font-size: 12px;">Offers</li>
+                                            <li style="margin-top: 15px;">Invite Friends</li>
+                                            <li>Trade-in & Upgrade</li>
+                                            <li>Students Discounts</li>
+                                            <li>Employee Discounts</li>
+                                            <li>Membership Benefits</li>
+                                            <li>Exclusive savings in OnePlus Store App</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>             
+                    
+                    
+                </ul>
+                <div class="navbar-logos">
+                    <div style="display: flex; align-items: center;; justify-content: end;  ">
+                
+                        <div class="navbar-logo-item">
+                            <button style="cursor: pointer;">
+                                <i class='bx bx-cart-alt bx-sm'></i>
+                            </button>
+                            <div class="button-menu" >
+                                <div class="btn-cart-wrapper">
+                                    <p style="font-size: 16px; color: black;">Your cart is empty</p>
+                                    <img src="/src/img/cart-icon.png" alt="">
+                                    <p style="color: gray; font-size: 14px; ">You are <span style="color: black;">100$</span> away from fre shipping</p>
+                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-logo-item">
+                            <button class="profile-btn" style="cursor: pointer;">
+                                <i class="fa-regular fa-circle-user fa-xl" style="color: #000000;"></i>
+                            </button>
+                            <div class="button-menu">
+                                <div class="oneplus-menu">
+                                    <div class="profile">
+                                        <img src="/src/img/prfl.png" style="width: 40px; height: 40px;" alt="Profile Icon" class="profile-icon">
+                                        <div class="welcome-text">
+                                            <p>Welcome to OnePlus</p>
+                                            <div class="auth-links">
+                                                <a href="#">Sign up</a> | <a href="#">Sign in</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <ul class="menu-list">
+                                        <li class="menu-item">
+                                            <div class="icon-text">
+                                                <i class='bx bx-notepad bx-2xl'></i>
+                                                <span>Orders</span>
+                                            </div>
+                                            <img src="arrow-icon.png" alt="Arrow Icon" class="arrow-icon">
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="icon-text">
+                                                <i class='bx bxs-user-circle'></i>
+                                                <span>Account</span>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="icon-text">
+                                                <i class='bx bx-medal' ></i>
+                                                <span>Achievement</span>
+                                            </div>
+                                            <i class="fa-solid fa-chevron-right"></i>                                    </li>
+                                        <li class="menu-item">
+                                            <div class="icon-text">
+                                                <i class='bx bxs-discount' ></i>
+                                                <span>Coupon</span>
+                                            </div>
+                                            <img src="arrow-icon.png" alt="Arrow Icon" class="arrow-icon">
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="icon-text">
+                                                <i class="fa-brands fa-bitcoin"></i>
+                                                <span>RedCoins</span>
+                                            </div>
+                                            <img src="arrow-icon.png" alt="Arrow Icon" class="arrow-icon">
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="icon-text">
+                                                <i class='bx bx-radio-circle-marked bx-xl'></i>
+                                                <span>Red Cable Club</span>
+                                            </div>
+                                            <img src="arrow-icon.png" alt="Arrow Icon" class="arrow-icon">
+                                        </li>
+                                    </ul>
+                                </div>                       
+                             </div>
+                        </div>
+                    </div>
+                    <button onclick="toggle_nav()" style="border: none; background-color: transparent;" class="fa-lg burger-btn">
+                        <i class="fa-solid fa-bars" style="color: #000000;"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </nav>
+        
+        <div class="toggle-nav slideUp" data-aos="fade-up" id="toggle-mbl" style="display: none; z-index: 9999; flex-direction: column; gap: 40px; height: 110vh; padding-left: 10px; padding-right: 10px;">            <div  class="footer-list-wrapper flex-row" style="gap: 15px; justify-content: space-around; ">
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <button class="toggle-btn toggle-btn-nav">Store <i class="fa fa-chevron-down"></i></button>
+                        <ul class="toggle-list ">
+                            <li><a href="#">OnePlus 12</a></li>
+                            <li><a href="#">OnePlus 12R</a></li>
+                            <li><a href="#">OnePlus Open</a></li>
+                            <li><a href="#">OnePlus Nord N30 5G</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <button class="toggle-btn toggle-btn-nav">Phone <i class="fa fa-chevron-down"></i></button>
+                        <ul class="toggle-list ">
+                            <li class="toggle-list-nav" ><a href="#">Audio</a></li>
+                            <li class="toggle-list-nav" ><a href="#">Tablet</a></li>
+                            <li class="toggle-list-nav" ><a href="#">Wearables</a></li>
+                            <li class="toggle-list-nav" ><a href="#">Case & Protection</a></li>
+                            <li class="toggle-list-nav" ><a href="#">Power & Cables</a></li>
+                            <li class="toggle-list-nav" ><a href="#">Gear</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <button class="toggle-btn toggle-btn-nav">Tablet <i class="fa fa-chevron-down"></i></button>
+                        <ul class="toggle-list toggle-list-nav">
+                            <li><a href="#">Invite Friends</a></li>
+                            <li><a href="#">Trade-in Program</a></li>
+                            <li><a href="#">Student Discount Program</a></li>
+                            <li><a href="#">Graduates Discount Program</a></li>
+                            <li><a href="#">Employee Discount Program</a></li>
+                            <li><a href="#">Affiliates Program</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <button class="toggle-btn toggle-btn-nav">Wearables <i class="fa fa-chevron-down"></i></button>
+                        <ul class="toggle-list toggle-list-nav">
+                            <li><a href="#">OnePlus Store app</a></li>
+                            <li><a href="#">Shopping FAQs</a></li>
+                            <li><a href="#">User Manuals</a></li>
+                            <li><a href="#">Software Upgrade</a></li>
+                            <li><a href="#">Repair Service</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <button class="toggle-btn toggle-btn-nav">Audio <i class="fa fa-chevron-down"></i></button>
+                        <ul class="toggle-list toggle-list-nav">
+                            <li><a href="#">About OnePlus</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Featured Stories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <button class="toggle-btn toggle-btn-nav">More Products <i class="fa fa-chevron-down"></i></button>
+                        <ul class="toggle-list toggle-list-nav">
+                            <li><a href="#">About OnePlus</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Featured Stories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <button class="toggle-btn toggle-btn-nav">OneTopia <i class="fa fa-chevron-down"></i></button>
+                        <ul class="toggle-list toggle-list-nav">
+                            <li><a href="#">About OnePlus</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Featured Stories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <button class="toggle-btn toggle-btn-nav">Communitu <i class="fa fa-chevron-down"></i></button>
+                        <ul class="toggle-list toggle-list-nav">
+                            <li><a href="#">About OnePlus</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Featured Stories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-list" >
+                    <li class="footer-list-item">
+                        <button class="toggle-btn toggle-btn-nav">Support <i class="fa fa-chevron-down"></i></button>
+                        <ul class="toggle-list toggle-list-nav">
+                            <li><a href="#">About OnePlus</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Featured Stories</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="navbar-logo-item-2" style="margin-left: 270px; ">
+               
+                <div class="button-menu-2">
+                    <div class="oneplus-menu">
+                        <div class="profile">
+                            <img src="/src/img/prfl.png" style="width: 40px; height: 40px;" alt="Profile Icon" class="profile-icon">
+                            <div class="welcome-text">
+                                <p>Welcome to OnePlus</p>
+                                <div class="auth-links">
+                                    <a href="#">Sign up</a> | <a href="#">Sign in</a>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <div class="icon-text">
+                                    <i class='bx bx-notepad bx-2xl'></i>
+                                    <span>Orders</span>
+                                </div>
+                                <img src="arrow-icon.png" alt="Arrow Icon" class="arrow-icon">
+                            </li>
+                            <li class="menu-item">
+                                <div class="icon-text">
+                                    <i class='bx bxs-user-circle'></i>
+                                    <span>Account</span>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <div class="icon-text">
+                                    <i class='bx bx-medal' ></i>
+                                    <span>Achievement</span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>                                    </li>
+                            <li class="menu-item">
+                                <div class="icon-text">
+                                    <i class='bx bxs-discount' ></i>
+                                    <span>Coupon</span>
+                                </div>
+                                <img src="arrow-icon.png" alt="Arrow Icon" class="arrow-icon">
+                            </li>
+                            <li class="menu-item">
+                                <div class="icon-text">
+                                    <i class="fa-brands fa-bitcoin"></i>
+                                    <span>RedCoins</span>
+                                </div>
+                                <img src="arrow-icon.png" alt="Arrow Icon" class="arrow-icon">
+                            </li>
+                            <li class="menu-item">
+                                <div class="icon-text">
+                                    <i class='bx bx-radio-circle-marked bx-xl'></i>
+                                    <span>Red Cable Club</span>
+                                </div>
+                                <img src="arrow-icon.png" alt="Arrow Icon" class="arrow-icon">
+                            </li>
+                        </ul>
+                    </div>                       
+                 </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-container" style="overflow-x: hidden;">
+        <section class="school-layout" style="z-index: -2;">
+            <div class="school-layout-wrapper">
+                <p class="school-layout-title">
+                    Get set for school with OnePlus
+                </p>
+                <a href="#" class="school-layout-btn">
+                    Learn More
+                </a>
+                
+                
+            </div>
+        </section>
+        <section class="apex-layout">
+            <div class="apex-wrapper">
+                <div class="apex-col-1 slideUp" data-aos="fade-up">
+                    <p class="apex-title-1">OnePlus Open</p>
+                    <p class="apex-title-2">Starting at $1299.99* <br>
+                        *With $100 Trade-in promo. <br>
+                        Plus, a FREE OnePlus Buds Pro 2.</p>
+                    <div class=" apex-btns">
+                        <a href="#" class="apex-layout-btn">
+                            Buy now
+                        </a>
+                        <button class="learn-more-btn">Learn More</button>
+
+                    </div>    
+                </div>
+                <div class="apex-col-1 slideUp" data-aos="fade-up">
+                    <p class="apex-title-1" style="max-width: 280px;">OnePlus Open Apex Edition
+
+                    </p>
+                    <p class="apex-title-2">Starting at $1499.99* <br>
+                        *Trade in and use code【1TBFORLIFE】to <br> save up to $400. Plus, a FREE gift worth up <br> to $219.</p>
+                    <div class=" apex-btns">
+                        <a href="#" class="apex-layout-btn">
+                            Buy now
+                        </a>
+                       
+
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section class="oneplus_12-layout">
+            <div class="oneplus_12-wrapper">
+                <div class="oneplus_12-col-1 slideUp" data-aos="fade-up">
+                    <p class="oneplus_12-title-1">OnePlus Open</p>
+                    <p class="oneplus_12-title-2">Starting at $1299.99* <br>
+                        *With $100 Trade-in promo. <br>
+                        Plus, a FREE OnePlus Buds Pro 2.</p>
+                    <div class="oneplus_12-btns">
+                        <a href="#" class="oneplus_12-layout-btn">
+                            Buy now
+                        </a>
+                        <button class="learn-more-btn" >Learn More</button>
+                    </div>    
+                </div>
+                <div class="oneplus_12-col-1 slideUp" data-aos="fade-up">
+                    <p class="oneplus_12-title-1" style="max-width: 280px;">OnePlus Open Apex Edition</p>
+                    <p class="oneplus_12-title-2">Starting at $1499.99* <br>
+                        *Trade in and use code【1TBFORLIFE】to <br> save up to $400. Plus, a FREE gift worth up <br> to $219.</p>
+                    <div class="oneplus_12-btns">
+                        <a href="#" class="oneplus_12-layout-btn">
+                            Buy now
+                        </a>
+                        <button class="learn-more-btn" style="color: black;">Learn More</button>
+
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section class="oneplus_pad-layout">
+            <div class="pad-wrapper slideRight" data-aos="fade-up">
+                <div class="pad-col-1">
+                    <p style="font-size: 16px;">Life Made Smooth</p>
+                    <p style="font-size: 36px;">OnePlus Pad 2</p>
+                </div>
+                <div class="flex-col pad-col-1" style="gap: 20px;">
+                    <p style="font-size: 20px;">
+                        Starting at $499.99* <br>
+                        *With Trade-in ANY pad promo. Claim a FREE OnePlus <br> Folio Case 2.
+                    </p>
+                    <div class="flex-row" style="align-items: center; gap: 15px;">
+                        <a href="#" class="oneplus_12-layout-btn">
+                            Buy now
+                        </a>
+                        <button class="learn-more-btn" style="color: black; ">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products-layout">
+            <div class="products-wrapper">
+                <div class="buds-pro fadeIn" data-aos="fade-up">
+                    <div class="flex-col" style="gap: 10px;">
+                        <p style="font-size: 14px; color: white;">Perfetcion at Play</p>
+                        <p style="font-size: 32px; color: white;">OnePlus Buds Pro 3</p>
+                        <p style="font-size: 14px; color: white;">Subscribe for a chance to win a new OnePlus Buds Pro 3 OR get $20 OFF.
+                        </p>
+
+                    </div>
+                    <a href="#" class="apex-layout-btn" style="max-width: 120px;">
+                        Learn More
+                    </a>
+                </div>
+                <div class="esyalar fadeIn" data-aos="fade-up" style=" margin-top: 20px; display: flex; justify-content: center; align-items: center; gap: 60px;">
+                    <div class="esyalar-col" style="display: flex; flex-direction: column; gap: 20px;">
+                        <div class="oneplus-watch">
+                            <div class="flex-col" style="gap: 10px;">
+                                <p style="font-size: 16px; color: black;">Your Partner in Time</p>
+                                <p style="font-size: 32px; color: black;">OnePlus Watch 2</p>
+                                <p style="font-size: 16px; color: black;"> From  $249.99
+                                </p>
+        
+                            </div>
+                            <div class=" button-lazim" style="align-items: center; gap: 15px;">
+                                <a href="#" class="oneplus_12-layout-btn" id="watch-btn">
+                                    Buy now
+                                </a>
+                                <button id="watch-btn" class="learn-more-btn" style="color: black; ">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="oneplus-store" style="width: 100%;" >
+                            <div class="flex-col" style="gap: 5px; ">
+                                <p style="font-size: 32px; color: white;">OnePlus Store</p>
+                                <p style="font-size: 16px; color: white;">Explore all OnePlus products and benefits here.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="esyalar-col" style="display: flex; flex-direction: column; gap: 20px;">
+                        <div class="oneplus-watch" style="background-image: url(/src/img/ear-buds-bg.png);">
+                            <div class="flex-col" style="gap: 10px;">
+                                <p style="font-size: 16px; color: black;">Harmony Unfiltered</p>
+                                <p style="font-size: 32px; color: black;">OnePlus Buds 2</p>
+                                <p style="font-size: 16px; color: black;"> From  $69.99
+                                </p>
+        
+                            </div>
+                            <div class="flex-row button-lazim" style="align-items: center; gap: 15px;">
+                                <a href="#" class="oneplus_12-layout-btn" id="watch-btn">
+                                    Buy now
+                                </a>
+                                <button id="watch-btn" class="learn-more-btn" style="color: black; ">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="oneplus-store" style="width: 100%; background-image: url(/src/img/running-man_bg.jpg);">
+                            <div class="flex-col" style="gap: 5px; ">
+                                <p style="font-size: 32px; color: white;">Red Cable Club</p>
+                                <p style="font-size: 16px; color: white;">Explore all OnePlus products and benefits here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating-section">
+                <div class="container">
+                    <h2>How would you rate the design and product information on this page?</h2>
+            
+                    <div class="stars">
+                        <i class="fa-solid fa-star fa-2xl" ></i>                        <div class="star" data-rating="2"></div>
+                        <i class="fa-solid fa-star fa-2xl" ></i>   
+                        <i class="fa-solid fa-star fa-2xl" ></i>   
+                        <i class="fa-solid fa-star fa-2xl" ></i>   
+                    </div>
+            
+                    <div class="rating">
+                        <span>Not good at all</span>
+                        <span>Very good</span>
+                    </div>
+                    <div style="height: 1px; width: 100%; margin-bottom: 20px; background-color: rgb(194, 194, 194);"></div>
+                    <div style="display: flex; justify-content: flex-end;">
+
+                        <button class="btn">Next</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="community-layout">
+            <div class="Community-part-1">
+                <div class="slideRight" data-aos="fade-up" style="display: flex; flex-direction: column; gap: 10px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p style="font-size: 20px; color: white;">Currently in Community
+                        </p>
+                        <a href="#" style="display: flex; align-items: center; gap: 6px; font-size: 14px; color: white;">Join us <i class='bx bx-plus' style='color:#ff2121'  ></i></a>
+                    </div>
+                    <div style="width: 100%; background-color: white; height: 1px; opacity: 30%;"></div>
+                
+                </div>
+                <div class="community-part-2 flex-col" style="gap: 60px; margin-top: 75px;" >
+                    <p class="slideRight" data-aos="fade-up" style="font-size: 48px; max-width: 1200px; color: white;">
+                        Innovation becomes relentless when shared. OnePlus has a Never Settle story with you, <span style="color: red;">Let’s Co-Create.</span> <i class="fa-solid fa-arrow-right fa-lg" style="color: red;"></i>
+                        
+                    </p>
+                    <div class="flex-row" data-aos="zoom-in">
+                        <div class="flex-col" style="gap: 250px;">
+                            <p style="font-size: 48px; max-width: 400px; color: white;">Power of Community</p>
+                            <div class="flex-col " style="gap: 20px;">
+                                <p style="font-size: 16px; color: white; max-width: 420px;">In keeping with the Never Settle ethos, your support, feedback, and ideas all contribute to superior future tech products.
+                                    
+                                </p>
+                                <button class="learn-more-btn" style="max-width: 90px;">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="community-background">
+
+                        </div>
+                        
+                    </div>
+                    <div data-aos="flip-down" class="flex-row" style="gap: 20px; align-items: center;">
+                        <div class="flex-col" style="gap: 30px;">
+                            <div class="carnival-background">
+
+                                
+                            </div>
+                            <div class="flex-col" style="gap: 20px;">
+                                <p style="font-size: 32px; color: white; max-width: 350px;">Carnival Games 2023
+                                    - Have Fun & Win!</p>
+                                <p style="font-size: 16px; color: white;  max-width: 390px;">
+                                    Play exciting games and get the chance to win big prizes, including new devices!
+
+                                </p>
+                                <button class="learn-more-btn" style="max-width: 90px;">Try now</button>
+
+                            </div>
+                        </div>
+                        <div class="flex-col" style="gap: 30px;">
+                            <div class="carnival-background" style="background-image: url(/src/img/meeT.webp);">
+
+                                
+                            </div>
+                            <div class="flex-col" style="gap: 20px;">
+                                
+                                <p style="font-size: 32px; color: white; max-width: 350px;">Meet, Greet,
+                                    and Never Settle
+                                    </p>
+                                <p style="font-size: 16px; color: white;  max-width: 390px;">
+                                    Discover what happened when a group of Community core users met up with OnePlus founders, explored OnePlus Labs, and helped co-create new possibilities.
+
+
+                                </p>
+                                <button class="learn-more-btn" style="max-width: 90px;">Learn More</button>
+
+                            </div>
+                        </div>
+                        <div class="flex-col" style="gap: 30px;">
+                            <div class="carnival-background" style="background-image: url(/src/img/KUBOK.webp);">
+
+                                
+                            </div>
+                            <div class="flex-col" style="gap: 20px;">
+                                
+                                <p style="font-size: 32px; color: white; max-width: 350px;">OnePlus Community Awards 2023
+
+                                    </p>
+                                <p style="font-size: 16px; color: white;  max-width: 390px;">
+                                    Thank you for making us who we are. Thank you for being a part of Never Settle.
+
+                                </p>
+                                <button class="learn-more-btn" style="max-width: 90px;">Watch Movie</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="community-part-3" style="margin-top: 60px;">
+                <div data-aos="fade-up" class="slideRight" style="display: flex; flex-direction: column; gap: 10px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p style="font-size: 20px; color: white;">OneTopia
+                        </p>
+                    </div>
+                    <div style="width: 100%; background-color: white; height: 1px; opacity: 30%;"></div>
+                
+                </div>
+                <div>
+                    <p class="slideRight" data-aos="fade-up" style="margin-top: 20px; font-size: 48px; max-width: 1200px; color: white;">
+                        Relentless innovation defines who we are.
+
+                    <div class="flex-row cont-l" data-aos="zoom-in">
+                        <div class="flex-col" style="gap: 300px;">
+                            <div style="margin-top: 45px;">
+                                <p style="color: white; font-size: 20px;">OxygenOs 14</p>
+                                <p style="font-size: 48px; max-width: 400px; color: white;">Evolved to Exceed</p>
+                            </div>
+                            <div class="flex-col " style="gap: 20px;">
+                                <p style="font-size: 16px; color: white; max-width: 420px;">In keeping with the Never Settle ethos, your support, feedback, and ideas all contribute to superior future tech products.
+                                    
+                                </p>
+                                <button class="learn-more-btn" style="max-width: 90px;">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="community-background " style="margin-top: 55px; background-image: url(/src/img/oxygenOs.webp);">
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="slideRight" data-aos="fade-up" style="display: flex; flex-direction: row-reverse;">
+                    <div class="flex-col" style="gap: 150px;">
+                        <div style="margin-top: 45px;">
+                            <p style="color: white; font-size: 20px;">Make the Moment
+
+                            </p>
+                            <p style="font-size: 48px; max-width: 350px; color: white;">2024 OnePlus Photography Awards
+                            </p>
+                        </div>
+                        <div class="flex-col " style="gap: 20px;">
+                            <p style="font-size: 16px; color: white; max-width: 420px;">The 2024 OnePlus Photography Awards welcomes EVERY photography enthusiast around the world. Showcase your unique creativity and remarkable talent, and share your visual story with breathtaking images. Make your Moment on OnePlus.
+
+
+                                
+                            </p>
+                            <button class="learn-more-btn" style="max-width: 90px;">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="community-background" style="margin-top: 55px; background-image: url(/src/img/photography.webp);">
+
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="support-layout">
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; justify-content: space-between;">
+                    <p style="font-size: 20px; color: black;">Support
+                    </p>
+                    <a href="#" style="display: flex; align-items: center; gap: 6px; font-size: 14px; color: black;">View More<i class='bx bx-plus' style='color:#ff2121'  ></i></a>
+                </div>
+                <div style="width: 100%; background-color: gray; height: 1px; opacity: 50%;"></div>
+            
+            </div>
+            <div   class="support-card-wrapper flex-row " style="margin-top: 35px; align-items: center; gap: 20px; ">
+                <div class="support-card flex-row " data-aos="fade-right" style="">
+
+                    <div  class="support-card-container" >
+                        <div class="flex-col" style="gap: 130px;">
+    
+                            <div style="margin-top: 45px; ">
+                                <p style="color: rgba(0, 0, 0, .4); font-size: 20px;">One-on-One with OnePlus
+    
+    
+    
+                                </p>
+                                <p style="font-size: 32px; max-width: 350px; color: rgba(0,0,0,.96);">2024 OnePlus Photography Awards
+                                </p>
+                            </div>
+                            <div class="flex-col " style="gap: 20px;">
+                                <p style="font-size: 16px; color: black; max-width: 270px;">
+                                    From finding the perfect phone to quickly resolving queries, we're always ready to help.
+                                </p>
+                                <button class="learn-more-btn-spp" style="transition: all 100ms ease-in; max-width: 90px; ">Let's chat</button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="/src/img/message.webp" alt="" style="width: 313px; height: 400px;">
+                </div>
+                <div class="support-card flex-row " style="" data-aos="fade-left" >
+
+                    <div  class="support-card-container" >
+                        <div class="flex-col" style="gap: 180px;">
+    
+                            <div style="margin-top: 45px; ">
+                                <p style="color: rgba(0, 0, 0, .4); font-size: 20px;">Enjoy your convenience
+
+
+    
+    
+    
+                                </p>
+                                <p style="font-size: 32px; max-width: 350px; color: rgba(0,0,0,.96);">OnePlus Repair Service
+
+                                </p>
+                            </div>
+                            <div class="flex-col " style="gap: 20px;">
+                                <p style="font-size: 16px; color: black; max-width: 270px;">
+                                    Send your device to the nearest pick up point and it will be sent to a service centre for repair.
+
+
+                                </p>
+                                <button class="learn-more-btn-spp" style="transition: all 100ms ease-in; max-width: 90px; ">Get started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="/src/img/repair.webp" alt="" style="width: 313px; height: 400px;">
+                </div>
+            </div>
+            <div style="margin-top: 60px;">
+                <div class="help-links">
+                    <div>
+                        <a href="#">Product help <i class="fa-solid fa-arrow-right fa-lg" ></i></a>
+                    </div>
+                    <span class="mbl-line" ></span>
+                    <div>
+                        <a href="#">Shopping FAQ <i class="fa-solid fa-arrow-right fa-lg" ></i></a>
+                    </div>
+                    <span class="mbl-line" ></span>
+
+                    <div>
+                        <a href="#">Troubleshooting <i class="fa-solid fa-arrow-right fa-lg" ></i></a>
+                    </div>
+                    <span class="mbl-line" ></span>
+
+                    <div>
+                        <a href="#">Protection plan <i class="fa-solid fa-arrow-right fa-lg" ></i></a>
+                    </div>
+                    <span class="mbl-line" ></span>
+
+                </div>            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; justify-content: space-between;">
+                <p style="font-size: 20px; color: white;">Stay connected
+
+                </p>
+            </div>
+            <div style="width: 100%; background-color: gray; height: 1px; opacity: 50%;"></div>
+        
+        </div>
+        <div class="footer-card-wrapper flex-row" style="gap: 15px;">
+            <div class="footer-card">
+                 <div class="flex-col" style="gap: 200px;">
+                    <div class="flex-col" style="gap: 5px;">
+                        <p style="font-size: 32px; color: white;">OnePlus Store APP
+                        </p>
+                        <p style="font-size: 16px; color: white; max-width: 420px;">Get exclusive 20% off audios and accessories with the App code: OPAPP20
+                        </p>
+                    </div>
+                    <a href="#" class="footer-btn">Learn more</a>
+                 </div>
+            </div>
+            <div class="footer-card footer-card-2">
+                 <div class="flex-col" style="justify-content: center; gap: 15px;" >
+                    
+                        <p style="font-size: 32px; color: white;">Be the first to know.
+
+                        </p>
+                        <p style="font-size: 14px; color: white; max-width: 420px;">Subscribe to enjoy $30 off on order over $300.
+
+                        </p>
+                        
+                        <p style="font-size: 14px; color: #666666; max-width: 420px;">By submitting the information requested below, you agree to receive recurring, automated promotional text messages as well as personalized marketing text messages (e.g., cart reminders) relating to OnePlus at the cell number used when signing up or otherwise designated by you. Consent is not a condition of any purchase. To cancel at any time, reply STOP, END, CANCEL, UNSUBSCRIBE, or QUIT to the short code. For other assistance, reply HELP to the short code to receive contact information for customer care. Message frequency varies. Message and data rates may apply. View Terms, Privacy Policy, State Privacy Policy, and Financial Incentive/Non-Discrimination Notice.</p>
+
+                        <div class="input-container">
+                            <input type="text" class="custom-input" placeholder="Your email or phone number">
+                            <span class="arrow-icon">→</span>
+                        </div>
+                 </div>
+            </div>
+        </div>
+        <div class="footer-list-wrapper flex-row" style="gap: 60px; justify-content: space-around; margin-top: 150px;">
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <button class="toggle-btn">Phones <i class="fa fa-chevron-down"></i></button>
+                    <ul class="toggle-list">
+                        <li><a href="#">OnePlus 12</a></li>
+                        <li><a href="#">OnePlus 12R</a></li>
+                        <li><a href="#">OnePlus Open</a></li>
+                        <li><a href="#">OnePlus Nord N30 5G</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <button class="toggle-btn">Accessories <i class="fa fa-chevron-down"></i></button>
+                    <ul class="toggle-list">
+                        <li><a href="#">Audio</a></li>
+                        <li><a href="#">Tablet</a></li>
+                        <li><a href="#">Wearables</a></li>
+                        <li><a href="#">Case & Protection</a></li>
+                        <li><a href="#">Power & Cables</a></li>
+                        <li><a href="#">Gear</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <button class="toggle-btn">Programs <i class="fa fa-chevron-down"></i></button>
+                    <ul class="toggle-list">
+                        <li><a href="#">Invite Friends</a></li>
+                        <li><a href="#">Trade-in Program</a></li>
+                        <li><a href="#">Student Discount Program</a></li>
+                        <li><a href="#">Graduates Discount Program</a></li>
+                        <li><a href="#">Employee Discount Program</a></li>
+                        <li><a href="#">Affiliates Program</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <button class="toggle-btn">Support <i class="fa fa-chevron-down"></i></button>
+                    <ul class="toggle-list">
+                        <li><a href="#">OnePlus Store app</a></li>
+                        <li><a href="#">Shopping FAQs</a></li>
+                        <li><a href="#">User Manuals</a></li>
+                        <li><a href="#">Software Upgrade</a></li>
+                        <li><a href="#">Repair Service</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <button class="toggle-btn">Company <i class="fa fa-chevron-down"></i></button>
+                    <ul class="toggle-list">
+                        <li><a href="#">About OnePlus</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Featured Stories</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        
+        
+        </div>
+        <div class="flex-col" style="gap: 20px;">     
+            <div style="display: flex; justify-content: space-between; margin-top: 60px;">
+    
+                <div class="logo-container">
+                    <div class="logo-box">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+                    </div>
+                    <div class="logo-box">
+                        <img src="//oasis.opstatics.com/content/dam/oasis/page/2023/footer/affirm.svg" alt="Affirm">
+                    </div>
+                    <div class="logo-box">
+                        <img src="//oasis.opstatics.com/content/dam/oasis/page/2023/footer/visa.svg" alt="Visa">
+                    </div>
+                    <div class="logo-box">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard">
+                    </div>
+                    <div class="logo-box">
+                        <img src="//oasis.opstatics.com/content/dam/oasis/page/2023/footer/AMERICAN.svg" alt="American Express">
+                    </div>
+                    <div class="logo-box">
+                        <img src="//oasis.opstatics.com/content/dam/oasis/page/2023/footer/Disover.svg" alt="Discover">
+                    </div>
+                </div>
+    
+                <div class="flex-row" style="gap: 15px; align-items: center;">
+                    <div>
+                        <i class="fa-brands fa-facebook fa-xl" style="color: #696969;"></i>
+                        <i class="fa-brands fa-square-x-twitter fa-xl" style="color: #696969;"></i>
+                        <i class="fa-brands fa-square-instagram fa-xl" style="color: #696969;"></i>
+                        <i class="fa-brands fa-youtube fa-xl" style="color: #696969; "></i>
+                    </div>
+                    <div style="width: 1px; height: 12px; background-color: gray;"></div>
+                    <a href="" style="font-size: 18px; color: white; display: flex; align-items: center; gap: 10px;"> Get Support from OnePlus <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <div style="opacity: 30%; background-color: gray; width: 100%; height: 1px;"></div>
+            <div class="footer-end">
+                <div class="footer-links">
+                    <a  style="color: #828282;" href="#">Privacy Policy</a>
+                    <a style="color: #828282;" href="#">State Privacy Policy</a>
+                    <a style="color: #828282;" href="#">Do Not Sell or Share My Personal Information</a>
+                    <a style="color: #828282;" href="#">Terms of Use</a>
+                    <a style="color: #828282;" href="#">Terms of Sale</a>
+                    <a style="color: #828282;" href="#">Security Response Center (OneSRC)</a>
+                    <a style="color: #828282;" href="#">Site Map</a>
+                </div>
+                <div class="footer-right" style="float: right;">
+                    <span style="color: #828282;">© 2013 - 2024 OnePlus. All Rights Reserved.</span>
+                    <select>
+                        <option value="en">United States (English)</option>
+                        <option value="es">United States (Spanish)</option>
+                    </select>
+               
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/src/scripts/app.js"></script>
+</body>
+</html>
